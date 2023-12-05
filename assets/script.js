@@ -53,7 +53,7 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   var hours = [today.format("H")];
-  var hour = 12; //parseInt(hours);
+  var hour = parseInt(hours);
   var count = $("#container-lg").children().length;
   for (var i = 0; i < count; i++) {
     if ([i + 9] > hour) {
